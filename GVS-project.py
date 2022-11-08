@@ -68,7 +68,7 @@ for a in df:
         f=df[a].value_counts().index
         mlp.pie(e,colors=d,labels=f,autopct='%.0f%%',textprops={'fontsize': 8})
         # mlp.rcParams['font.size']=8\
-        labels = [f'{l}, {s:0.1f}%' for l, s in zip(f, e)]
+        labels = [f'{l}, {s:0.1f}' for l, s in zip(f, e)]
         # mlp.rcParams['font.size']=8\
         mlp.legend(bbox_to_anchor=(0.85, 1), loc='upper left', labels=labels)
         print(mlp.show())
